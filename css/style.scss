@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/nebo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin-top: 8vw;
+    position: relative;
+    z-index: 2;
+    padding: 0 5%;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 90vw;
+    margin: 30px auto 0;
+}
+.countdown{
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0,0,0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 0 100px 50px #000;
+    flex-wrap: wrap;
+}
+.num{
+    font-size: 4rem;
+}
+.name{
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.data{
+    height: 30px;
+    width: 11rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 17px;
+    font-weight: bold;
+}
+.play_img{
+    width: 5rem;
+    height: 5rem;
+    background-color: aliceblue;
+    margin: 0 auto;
+    border-radius: 48px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+@media(max-width: 430px){
+    .title{
+        font-size: 42px;
+    }
+    .play_img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .wrapper{
+        height: 240px;
+    }
+    .countdown{
+        font-size: 20px;
+    }
+}
