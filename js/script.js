@@ -58,13 +58,20 @@ function initCountdown(parent, to){
     countdown()
 }
 
-
 function startCountdown(){
     let data = document.querySelector('.data')
-    return initCountdown('.countdown', new Date(data.value))
+    initCountdown('.countdown', new Date(data.value)) 
+    data_value = ""
 }
-
 let button = document.querySelector('.play_img')
 button.addEventListener('click', startCountdown)
 
 
+
+
+// function stopCountdown(){
+//     initCountdown(null) 
+// }
+
+// let stop_func = document.querySelector('.title');
+// stop_func.addEventListener('click', stopCountdown)
